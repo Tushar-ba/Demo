@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consultation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+.navbar {
+  display: flex;
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar input#menu-toggler {
+  display: none;
+}
+
+.navbar #hamburger-btn {
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .all-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .all-links li {
+  position: relative;
+  list-style: none;
+}
+
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+header a, footer a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  padding: 20px 0;
+  display: inline-block;
+}
+
+header a:hover, footer a:hover {
+  color: #ddd;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.heading{
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.container{
+  margin-top: 68px;
+  padding: 80px;
+}
+.image11{
+  float: right;
+  width: 600px;
+  padding-right: 20px;
+  float: left;
+}
+
+img{
+  float: right;
+  width: 550px;
+  padding-left: 20px;
+}
+p{
+  font-size: 25px;
+  line-height: 55px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+span{
+  font-size: 35px;
+  font-family: 'Lora', serif;
+  text-decoration: underline;
+}
+        
+        /* media queries */
+        @media screen and (max-width: 860px) {
+  .navbar .all-links {
+    position: fixed;
+    left: -100%;
+    width: 300px;
+    display: block;
+    height: 100vh;
+    top: 75px;
+    background: #333;
+    transition: left 0.3s ease;
+  }
+
+  .navbar #menu-toggler:checked~.all-links {
+    left: 0;
+  }
+
+  .navbar .all-links li {
+    font-size: 18px;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  section > p {
+    text-align: center;
+  }
+
+  section .cards .card {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+  }
+
+  .homepage .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .homepage .content .text {
+    font-size: 17px;
+  }
+
+  .content a {
+    font-size: 17px;
+    padding: 9px 20px;
+  }
+
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .col {
+    width: 100%;
+  }
+
+  .contact .row .col:last-child {
+    margin-top: 40px;
+  }
+
+  footer a {
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  section .cards .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <h2 class="logo"><a href="#home">RVSR Law Firm</a></h2>
+          <input type="checkbox" id="menu-toggler">
+          <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+              <path d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </label>
+          <ul class="all-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="content">
+          <img src="images/familyy.jpg" alt="">
+          <span>Family law "Loving v. Virginia" (1967).</span>
+          
+          <p>One of the most famous family law cases in the United States is "Loving v. Virginia" (1967). This landmark case dealt with the issue of interracial marriage and had far-reaching implications for family law and civil rights.<br> <span>Case Background</span> <br>
+            In 1958, Mildred Loving, a Black woman, and Richard Loving, a white man, were married in the District of Columbia, where interracial marriages were legal. However, when they returned to their home state of Virginia, they were arrested and charged with violating Virginia's anti-miscegenation laws, which prohibited interracial marriages.
+            
+            <br><span>Family Law Issue</span><br>
+            The central family law issue in this case was the legality and validity of Mildred and Richard Loving's marriage. At the heart of the matter was whether the state could prohibit and criminalize their marriage based on their racial backgrounds.
+            
+            <br><span>Litigation and Outcome </span><br>
+            
+            The Loving case made its way to the Supreme Court of the United States. In a unanimous decision in 1967, the Supreme Court ruled in favor of the Lovings, striking down Virginia's anti-miscegenation laws as unconstitutional. Chief Justice Earl Warren delivered the opinion, stating that the laws violated the Equal Protection Clause of the 14th Amendment, which prohibits states from denying equal protection under the law to any person. <br> <span>Impact</span>
+            <br>The "Loving v. Virginia" case had a profound impact on family law and civil rights. It not only invalidated anti-miscegenation laws in Virginia but also in the 15 other states where such laws were still in effect. The decision legalized interracial marriage throughout the United States, making it a landmark victory for couples who wished to marry regardless of their racial backgrounds.
+
+            Furthermore, the case set a significant precedent for constitutional challenges to laws that discriminate against individuals based on race, ethnicity, or other factors. It reaffirmed the principle that the right to marry is a fundamental civil right protected by the Constitution.
+            
+            "Loving v. Virginia" is celebrated not only for its impact on family law but also for its contribution to the broader civil rights movement. The Loving decision is often cited in cases involving marriage equality and challenges to discriminatory laws, and it continues to be a symbol of progress in the fight for civil rights and social justice.</p>
+            
+          </p>
+        </div>
+         
+        </div>
+      </div>
+</body>
+</html>
